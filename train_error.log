@@ -1,0 +1,45 @@
+2025-11-06 00:27:08 | INFO | fairseq.tasks.text_to_speech | Please install tensorboardX: pip install tensorboardX
+D:\code\anaconda\envs\antimamba02\lib\site-packages\torch\nn\utils\weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+  0%|          | 0/6345 [00:00<?, ?it/s]2025-11-06 00:27:19 | INFO | fairseq.tasks.text_to_speech | Please install tensorboardX: pip install tensorboardX
+2025-11-06 00:27:23 | INFO | fairseq.tasks.text_to_speech | Please install tensorboardX: pip install tensorboardX
+2025-11-06 00:27:26 | INFO | fairseq.tasks.text_to_speech | Please install tensorboardX: pip install tensorboardX
+2025-11-06 00:27:30 | INFO | fairseq.tasks.text_to_speech | Please install tensorboardX: pip install tensorboardX
+D:\code\anaconda\envs\antimamba02\lib\site-packages\librosa\core\intervals.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_filename
+D:\code\anaconda\envs\antimamba02\lib\site-packages\librosa\core\intervals.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_filename
+D:\code\anaconda\envs\antimamba02\lib\site-packages\librosa\core\intervals.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_filename
+D:\code\anaconda\envs\antimamba02\lib\site-packages\librosa\core\intervals.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_filename
+  0%|          | 0/6345 [00:21<?, ?it/s]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\XLSR-Mamba-main\main.py", line 283, in <module>
+    train_epoch(train_loader, model, args.lr, optimizer, device)
+  File "C:\Users\Administrator\Desktop\XLSR-Mamba-main\main.py", line 98, in train_epoch
+    for batch_x, batch_y in pbar:    
+  File "D:\code\anaconda\envs\antimamba02\lib\site-packages\tqdm\std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "D:\code\anaconda\envs\antimamba02\lib\site-packages\torch\utils\data\dataloader.py", line 630, in __next__
+    data = self._next_data()
+  File "D:\code\anaconda\envs\antimamba02\lib\site-packages\torch\utils\data\dataloader.py", line 1345, in _next_data
+    return self._process_data(data)
+  File "D:\code\anaconda\envs\antimamba02\lib\site-packages\torch\utils\data\dataloader.py", line 1371, in _process_data
+    data.reraise()
+  File "D:\code\anaconda\envs\antimamba02\lib\site-packages\torch\_utils.py", line 694, in reraise
+    raise exception
+AttributeError: Caught AttributeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "D:\code\anaconda\envs\antimamba02\lib\site-packages\torch\utils\data\_utils\worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+  File "D:\code\anaconda\envs\antimamba02\lib\site-packages\torch\utils\data\_utils\fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "D:\code\anaconda\envs\antimamba02\lib\site-packages\torch\utils\data\_utils\fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\Administrator\Desktop\XLSR-Mamba-main\data_utils.py", line 51, in __getitem__
+    Y=process_Rawboost_feature(X, fs, self.args, self.algo)
+  File "C:\Users\Administrator\Desktop\XLSR-Mamba-main\RawBoost.py", line 135, in process_Rawboost_feature
+    feature =LnL_convolutive_noise(feature,args.N_f,args.nBands,args.minF,args.maxF,args.minBW,args.maxBW,
+AttributeError: 'Namespace' object has no attribute 'N_f'
+
